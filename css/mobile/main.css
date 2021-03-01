@@ -211,11 +211,11 @@ header nav li a:hover:after {
 #galeria .heading-arrow img {
   width: 40px;
   position: absolute;
-  top: 120px;
-  right: 10px;
+  top: 50px;
+  right: 40px;
 }
 #galeria .swiper-container {
-  width: 88vw;
+  width: 92vw;
   height: 300px;
 }
 #galeria .swiper-container .swiper-button-prev,
