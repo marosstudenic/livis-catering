@@ -1,0 +1,102 @@
+@import "variables";
+@mixin clip-oval {
+  clip-path: ellipse(100% 80% at 50% 20%);
+}
+
+#welcome {
+  z-index: 1;
+  .img-bg {
+    @include clip-oval;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 0;
+    height: 250px;
+  }
+
+  .gradient-pink {
+    @include clip-oval;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(249, 232, 235, 1) 30%,
+      rgba(249, 232, 235, 0.5) 100%
+    );
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250px;
+  }
+  width: 100%;
+  padding-top: 300px;
+
+  .wrapper {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      font-size: $fontSize3;
+      padding: 0 $padding;
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      .buttons {
+        @media (min-width: 370px) {
+          display: flex;
+        }
+
+        width: 100%;
+
+        .left {
+          margin-right: 10px;
+        }
+
+        .button {
+          font-size: $fontSize4;
+
+          margin-bottom: 5px;
+          border-radius: 30px;
+          padding: 5px 24px;
+          color: $white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 60px;
+          transition: 0.3s ease-in;
+
+          &::after {
+            content: url("../assets/ELEMENTS/arrow.svg");
+            width: 10px;
+          }
+        }
+      }
+    }
+
+    .imgs {
+      width: 100%;
+      padding: 20px $padding;
+
+      img {
+        object-fit: cover;
+        object-position: 60% 50%;
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+      }
+    }
+  }
+}

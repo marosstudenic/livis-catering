@@ -1,0 +1,47 @@
+#galeria {
+  z-index: 1;
+  position: relative;
+  top: 0;
+  padding: 40px $padding;
+
+  .heading-arrow {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    margin-bottom: 20px;
+
+    img {
+      width: 40px;
+      position: absolute;
+      top: 120px;
+      right: 10px;
+    }
+  }
+  .swiper-container {
+    width: 88vw;
+    height: 300px;
+
+    .swiper-button-prev,
+    .swiper-button-next {
+      color: $red;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+
+      img {
+        height: 100%;
+        width: auto;
+        max-width: 90vw;
+      }
+    }
+  }
+
+  #move-galery {
+    transform: rotateZ(0);
+    transition: 2s;
+  }
+  margin-bottom: -150px;
+}

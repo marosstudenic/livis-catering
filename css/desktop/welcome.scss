@@ -1,0 +1,90 @@
+@import "variables";
+@mixin clip-oval {
+  clip-path: ellipse(100% 80% at 50% 20%);
+}
+
+#welcome {
+  z-index: 1;
+  .img-bg {
+    @include clip-oval;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    z-index: 0;
+    height: 900px;
+  }
+
+  .gradient-pink {
+    @include clip-oval;
+
+    background-image: linear-gradient(
+      to right,
+      rgba(249, 232, 235, 1) 30%,
+      rgba(249, 232, 235, 0.5) 100%
+    );
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 900px;
+  }
+  width: 100%;
+  height: 900px;
+  padding-top: 320px;
+  padding-left: 350px;
+  padding-right: 250px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  .wrapper {
+    z-index: 1;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 500px;
+      font-size: $fontSize3;
+
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
+    .imgs {
+      position: relative;
+      right: 0;
+      // transform: translateX(-100%);
+
+      .img1,
+      .img2,
+      .img3 {
+        position: absolute;
+      }
+      .img1 {
+        top: -130px;
+        right: 244px;
+        z-index: 10;
+      }
+
+      .img2 {
+        top: -34px;
+        right: 0;
+        z-index: 30;
+      }
+      .img3 {
+        top: 255px;
+        right: 100px;
+        z-index: 20;
+      }
+    }
+  }
+}

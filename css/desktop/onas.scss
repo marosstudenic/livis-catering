@@ -1,0 +1,46 @@
+#onas {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  justify-content: flex-start;
+  padding-right: 300px;
+
+  .imgs {
+    position: relative;
+
+    .pattern {
+      position: absolute;
+      top: 380px;
+      left: 340px;
+      width: 300px;
+      height: 300px;
+      fill: $pink;
+    }
+  }
+
+  .content {
+    margin-left: 25%;
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h2 {
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul {
+      margin: 20px 0;
+      font-size: $fontSize3;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      align-items: center;
+    }
+  }
+}

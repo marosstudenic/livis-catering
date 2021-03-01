@@ -1,0 +1,56 @@
+@import "variables";
+#kontakt {
+  width: 100%;
+  padding: 100px $padding;
+
+  // display: flex;
+  // justify-content: space-between;
+
+  .a {
+    fill: #fff;
+  }
+
+  .formular {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    width: 100%;
+
+    .row {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+  }
+  .right-panel {
+    position: relative;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    img {
+      width: 60%;
+    }
+    .pattern {
+      position: absolute;
+      max-height: 250px;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .button {
+    font-size: $fontSize3;
+    border-radius: 30px;
+    padding: 12px 50px;
+    color: $white;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    cursor: pointer;
+  }
+}

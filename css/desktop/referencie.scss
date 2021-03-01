@@ -1,0 +1,53 @@
+@import "variables";
+#referencie {
+  z-index: 0;
+  color: $pink;
+  width: 100%;
+  padding: 250px 200px 180px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $grey;
+
+  .left-big {
+    margin-right: 50px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+    .button {
+      border: none;
+      cursor: pointer;
+      font-size: $fontSize3;
+      margin: auto;
+      margin-top: 70px;
+      color: $grey;
+      background-color: $pink;
+      padding: 15px 40px;
+      border-radius: 30px;
+      align-self: center;
+    }
+  }
+
+  .recenzie-wrapper {
+    width: 65%;
+    // overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+
+    .text {
+      width: 30vw;
+      line-height: 1.8em;
+      margin: 0 40px;
+
+      &.more {
+        display: none;
+      }
+
+      p {
+        display: inline-block;
+        margin-bottom: 50px;
+        font-weight: 300;
+      }
+    }
+  }
+}

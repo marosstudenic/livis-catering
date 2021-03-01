@@ -1,0 +1,66 @@
+@import "variables";
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-right: 50px;
+  width: 100%;
+}
+
+.form__field {
+  z-index: 2;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid $black;
+  outline: 0;
+  font-size: $fontSize3;
+  letter-spacing: 0.05em;
+  color: $red;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+}
+
+.form__label {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: $grey;
+}
+
+.form__field:focus {
+  ~ .form__label {
+    position: absolute;
+    top: -3px;
+    display: block;
+    transition: 0.2s;
+    font-size: $fontSize4;
+    color: $grey;
+    font-weight: 400;
+  }
+  padding-bottom: 6px;
+  font-weight: 400;
+  border-width: 1px;
+  border-image: linear-gradient(to right, $red, $black);
+  border-image-slice: 1;
+}
+/* reset input */
+.form__field {
+  &:required,
+  &:invalid {
+    box-shadow: none;
+  }
+}

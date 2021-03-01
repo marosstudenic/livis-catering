@@ -1,0 +1,74 @@
+#onas {
+  width: 100%;
+  padding-top: 30px;
+
+  .content {
+    width: 100%;
+    padding: 0 $padding;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h2 {
+      margin: 0 0 10px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    .akcie {
+      border: 1px solid $grey;
+      box-shadow: 5px 5px 0 1px $red;
+      width: 90vw;
+      margin: 10px auto 30px;
+      display: flex;
+      justify-content: center;
+      ul {
+        margin: 20px 0;
+        font-size: $fontSize3;
+        font-size: 1.3em;
+
+        li {
+          // background-color: $red;
+          // color: $white;
+          // height: 70px;
+          // width: 100px;
+          // margin: 5px 5px;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin-bottom: 5px;
+          padding: 0 20px;
+          .bullet {
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+          }
+          // border-radius: 10px;
+          // padding: 7px;
+        }
+      }
+    }
+  }
+  .imgs {
+    width: 100%;
+    margin-bottom: 100px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .pattern {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 150px;
+      height: 150px;
+      fill: $pink;
+    }
+  }
+}

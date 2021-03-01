@@ -1,0 +1,481 @@
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+header {
+  position: absolute;
+  top: 70px;
+  z-index: 2;
+  width: 100vw;
+  padding: 0 10px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  max-height: 60%;
+}
+header nav {
+  display: flex;
+  width: 550px;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav li a {
+  font-size: 1.2em;
+  font-weight: 500;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+header nav li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #476667;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+header nav li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+#onas {
+  width: 100%;
+  padding-top: 30px;
+}
+#onas .content {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#onas .content h2 {
+  margin: 0 0 10px;
+}
+#onas .content p {
+  margin: 10px 0;
+}
+#onas .content .akcie {
+  border: 1px solid #476667;
+  box-shadow: 5px 5px 0 1px #c28283;
+  width: 90vw;
+  margin: 10px auto 30px;
+  display: flex;
+  justify-content: center;
+}
+#onas .content .akcie ul {
+  margin: 20px 0;
+  font-size: 1.2em;
+  font-size: 1.3em;
+}
+#onas .content .akcie ul li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 0 20px;
+}
+#onas .content .akcie ul li .bullet {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+#onas .imgs {
+  width: 100%;
+  margin-bottom: 100px;
+  position: relative;
+}
+#onas .imgs img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+#onas .imgs .pattern {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  fill: #f9e8eb;
+}
+
+#welcome {
+  z-index: 1;
+  width: 100%;
+  padding-top: 300px;
+}
+#welcome .img-bg {
+  clip-path: ellipse(100% 80% at 50% 20%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  height: 250px;
+}
+#welcome .gradient-pink {
+  clip-path: ellipse(100% 80% at 50% 20%);
+  background-image: linear-gradient(to right, #f9e8eb 30%, rgba(249, 232, 235, 0.5) 100%);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 250px;
+}
+#welcome .wrapper {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#welcome .wrapper .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  font-size: 1.2em;
+  padding: 0 20px;
+}
+#welcome .wrapper .text p {
+  margin-bottom: 20px;
+}
+#welcome .wrapper .text .buttons {
+  width: 100%;
+}
+@media (min-width: 370px) {
+  #welcome .wrapper .text .buttons {
+    display: flex;
+  }
+}
+#welcome .wrapper .text .buttons .left {
+  margin-right: 10px;
+}
+#welcome .wrapper .text .buttons .button {
+  font-size: 1em;
+  margin-bottom: 5px;
+  border-radius: 30px;
+  padding: 5px 24px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  transition: 0.3s ease-in;
+}
+#welcome .wrapper .text .buttons .button::after {
+  content: url("../assets/ELEMENTS/arrow.svg");
+  width: 10px;
+}
+#welcome .wrapper .imgs {
+  width: 100%;
+  padding: 20px 20px;
+}
+#welcome .wrapper .imgs img {
+  object-fit: cover;
+  object-position: 60% 50%;
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+}
+
+#galeria {
+  z-index: 1;
+  position: relative;
+  top: 0;
+  padding: 40px 20px;
+  margin-bottom: -150px;
+}
+#galeria .heading-arrow {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#galeria .heading-arrow img {
+  width: 40px;
+  position: absolute;
+  top: 120px;
+  right: 10px;
+}
+#galeria .swiper-container {
+  width: 88vw;
+  height: 300px;
+}
+#galeria .swiper-container .swiper-button-prev,
+#galeria .swiper-container .swiper-button-next {
+  color: #c28283;
+}
+#galeria .swiper-container .swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+#galeria .swiper-container .swiper-slide img {
+  height: 100%;
+  width: auto;
+  max-width: 90vw;
+}
+#galeria #move-galery {
+  transform: rotateZ(0);
+  transition: 2s;
+}
+
+#referencie {
+  z-index: 0;
+  color: #f9e8eb;
+  width: 100%;
+  padding: 200px 20px 50px;
+  background-color: #476667;
+}
+#referencie .left-big {
+  margin-right: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+#referencie .recenzie-wrapper {
+  width: 100%;
+}
+#referencie .recenzie-wrapper .text {
+  width: 100%;
+  line-height: 1.8em;
+  margin: 25px 0 25px;
+}
+#referencie .recenzie-wrapper .text.more {
+  display: none;
+}
+#referencie .recenzie-wrapper .text p {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+#referencie .recenzie-wrapper .button {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin: 0 auto;
+  margin-top: 40px;
+  color: #476667;
+  background-color: #f9e8eb;
+  padding: 15px 40px;
+  border-radius: 30px;
+  align-self: center;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-right: 50px;
+  width: 100%;
+}
+
+.form__field {
+  z-index: 2;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  outline: 0;
+  font-size: 1.2em;
+  letter-spacing: 0.05em;
+  color: #c28283;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #476667;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 400;
+  border-width: 1px;
+  border-image: linear-gradient(to right, #c28283, #000000);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: -3px;
+  display: block;
+  transition: 0.2s;
+  font-size: 1em;
+  color: #476667;
+  font-weight: 400;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+#kontakt {
+  width: 100%;
+  padding: 100px 20px;
+}
+#kontakt .a {
+  fill: #fff;
+}
+#kontakt .formular {
+  width: 100%;
+}
+#kontakt .formular .row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+#kontakt .right-panel {
+  position: relative;
+  padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+#kontakt .right-panel img {
+  width: 60%;
+}
+#kontakt .right-panel .pattern {
+  position: absolute;
+  max-height: 250px;
+  right: 0;
+  top: 0;
+}
+#kontakt .button {
+  font-size: 1.2em;
+  border-radius: 30px;
+  padding: 12px 50px;
+  color: #ffffff;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #476667;
+  background-color: #ffffff;
+  position: relative;
+}
+footer p {
+  text-align: center;
+}
+footer .to-top {
+  position: absolute;
+  right: 30px;
+  bottom: 80px;
+  width: 50px;
+  transform: rotate(-90deg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DMSans-Regular", "sans-serif";
+  font-weight: 500;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #476667;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.grey {
+  color: #476667;
+}
+
+.pink {
+  color: #f9e8eb;
+}
+
+.red {
+  color: #c28283;
+}
+
+.bg-grey {
+  background-color: #476667;
+}
+
+.bg-red {
+  background-color: #c28283;
+}
+
+.bg-pink {
+  background-color: #f9e8eb;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=main.css.map */

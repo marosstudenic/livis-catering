@@ -1,0 +1,71 @@
+@import "variables";
+@import "header";
+@import "onas";
+@import "button";
+@import "welcome";
+@import "galeria";
+@import "referencie";
+@import "input";
+@import "kontakt";
+@import "footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DMSans-Regular", "sans-serif";
+  font-weight: 500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: $grey;
+}
+
+body {
+  // width: 1920px;
+  width: 100vw;
+  overflow-x: hidden;
+  display: relative;
+}
+
+.grey {
+  color: $grey;
+}
+.pink {
+  color: $pink;
+}
+.red {
+  color: $red;
+}
+
+.bg-grey {
+  background-color: $grey;
+}
+.bg-red {
+  background-color: $red;
+}
+.bg-pink {
+  background-color: $pink;
+}
+
+h1 {
+  font-size: $fontSize1;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: $fontSize2;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: $fontSize3;
+}

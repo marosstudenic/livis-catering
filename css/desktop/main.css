@@ -1,0 +1,474 @@
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+@import url("../assets/fonts/*");
+header {
+  position: absolute;
+  top: 70px;
+  z-index: 2;
+  width: 100%;
+  padding: 0 250px;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header img {
+  max-height: 60%;
+}
+header nav {
+  display: flex;
+  width: 550px;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav li a {
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+header nav li a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #476667;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+header nav li a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+#onas {
+  width: 100%;
+  display: flex;
+  margin-top: 100px;
+  justify-content: flex-start;
+  padding-right: 300px;
+}
+#onas .imgs {
+  position: relative;
+}
+#onas .imgs .pattern {
+  position: absolute;
+  top: 380px;
+  left: 340px;
+  width: 300px;
+  height: 300px;
+  fill: #f9e8eb;
+}
+#onas .content {
+  margin-left: 25%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+#onas .content h2 {
+  margin: 0 0 10px;
+}
+#onas .content p {
+  margin: 10px 0;
+}
+#onas .content ul {
+  margin: 20px 0;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.buttons {
+  display: flex;
+}
+.buttons .button {
+  font-size: 18px;
+  border-radius: 30px;
+  padding: 5px 30px;
+  color: #ffffff;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  transition: 0.3s ease-in;
+}
+.buttons .button::after {
+  content: url("../assets/ELEMENTS/arrow.svg");
+  width: 10px;
+}
+
+#welcome {
+  z-index: 1;
+  width: 100%;
+  height: 900px;
+  padding-top: 320px;
+  padding-left: 350px;
+  padding-right: 250px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+#welcome .img-bg {
+  clip-path: ellipse(100% 80% at 50% 20%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+  height: 900px;
+}
+#welcome .gradient-pink {
+  clip-path: ellipse(100% 80% at 50% 20%);
+  background-image: linear-gradient(to right, #f9e8eb 30%, rgba(249, 232, 235, 0.5) 100%);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 900px;
+}
+#welcome .wrapper {
+  z-index: 1;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+#welcome .wrapper .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  font-size: 18px;
+}
+#welcome .wrapper .text p {
+  margin-bottom: 20px;
+}
+#welcome .wrapper .imgs {
+  position: relative;
+  right: 0;
+}
+#welcome .wrapper .imgs .img1,
+#welcome .wrapper .imgs .img2,
+#welcome .wrapper .imgs .img3 {
+  position: absolute;
+}
+#welcome .wrapper .imgs .img1 {
+  top: -130px;
+  right: 244px;
+  z-index: 10;
+}
+#welcome .wrapper .imgs .img2 {
+  top: -34px;
+  right: 0;
+  z-index: 30;
+}
+#welcome .wrapper .imgs .img3 {
+  top: 255px;
+  right: 100px;
+  z-index: 20;
+}
+
+#galeria {
+  padding: 0 200px;
+  padding-top: 50px;
+  z-index: 1;
+  position: relative;
+  top: 0;
+  margin-bottom: -100px;
+}
+#galeria .heading-arrow {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#galeria .heading-arrow img {
+  width: 100px;
+}
+#galeria .galery {
+  transition: 2s;
+  transform: translateX(0);
+  display: flex;
+}
+#galeria .galery img {
+  max-height: 400px;
+  width: auto;
+  margin: 5px;
+  transform: scale(1);
+  transition: 0.5s;
+  z-index: 9;
+}
+#galeria .galery img:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+#galeria .galery.moved {
+  transform: translateX(-50%);
+}
+#galeria #move-galery {
+  transform: rotateZ(0);
+  transition: 2s;
+}
+#galeria #move-galery.moved {
+  transform: rotateZ(180deg);
+}
+
+#referencie {
+  z-index: 0;
+  color: #f9e8eb;
+  width: 100%;
+  padding: 250px 200px 180px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #476667;
+}
+#referencie .left-big {
+  margin-right: 50px;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+#referencie .left-big .button {
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin: auto;
+  margin-top: 70px;
+  color: #476667;
+  background-color: #f9e8eb;
+  padding: 15px 40px;
+  border-radius: 30px;
+  align-self: center;
+}
+#referencie .recenzie-wrapper {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+#referencie .recenzie-wrapper .text {
+  width: 30vw;
+  line-height: 1.8em;
+  margin: 0 40px;
+}
+#referencie .recenzie-wrapper .text.more {
+  display: none;
+}
+#referencie .recenzie-wrapper .text p {
+  display: inline-block;
+  margin-bottom: 50px;
+  font-weight: 300;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 0;
+  margin-top: 10px;
+  margin-right: 50px;
+  width: 100%;
+}
+
+.form__field {
+  z-index: 2;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #000000;
+  outline: 0;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #c28283;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #476667;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 400;
+  border-width: 1px;
+  border-image: linear-gradient(to right, #c28283, #000000);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: -3px;
+  display: block;
+  transition: 0.2s;
+  font-size: 16px;
+  color: #476667;
+  font-weight: 400;
+}
+
+/* reset input */
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+#kontakt {
+  width: 100%;
+  padding: 180px 200px;
+  display: flex;
+  justify-content: space-between;
+}
+#kontakt .a {
+  fill: #fff;
+}
+#kontakt .formular {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  width: 80%;
+}
+#kontakt .formular .row {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+#kontakt .right-panel {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 25%;
+}
+#kontakt .right-panel .pattern {
+  transform: translate(50%, 50%);
+  max-height: 250px;
+}
+#kontakt .button {
+  font-size: 18px;
+  border-radius: 30px;
+  padding: 12px 50px;
+  color: #ffffff;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #476667;
+  background-color: #ffffff;
+  position: relative;
+}
+footer p {
+  text-align: center;
+}
+footer .to-top {
+  position: absolute;
+  right: 30px;
+  bottom: 80px;
+  width: 50px;
+  transform: rotate(-90deg);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "DMSans-Regular", "sans-serif";
+  font-weight: 500;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #476667;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  display: relative;
+}
+
+.grey {
+  color: #476667;
+}
+
+.pink {
+  color: #f9e8eb;
+}
+
+.red {
+  color: #c28283;
+}
+
+.bg-grey {
+  background-color: #476667;
+}
+
+.bg-red {
+  background-color: #c28283;
+}
+
+.bg-pink {
+  background-color: #f9e8eb;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+/*# sourceMappingURL=main.css.map */
