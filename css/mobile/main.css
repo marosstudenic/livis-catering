@@ -167,12 +167,11 @@ header nav li a:hover:after {
   font-size: 0.8em;
   margin-bottom: 5px;
   border-radius: 30px;
-  padding: 2px 15px;
+  padding: 7px 20px;
   color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60px;
   transition: 0.3s ease-in;
 }
 #welcome .wrapper .text .buttons .button::after {
