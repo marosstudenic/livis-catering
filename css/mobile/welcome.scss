@@ -56,9 +56,10 @@
       }
 
       .buttons {
-        @media (min-width: 370px) {
-          display: flex;
-        }
+        // @media (min-width: 370px) {
+        //   display: flex;
+        // }
+        display: flex;
 
         width: 100%;
 
@@ -67,11 +68,11 @@
         }
 
         .button {
-          font-size: $fontSize4;
+          font-size: 0.8em;
 
           margin-bottom: 5px;
           border-radius: 30px;
-          padding: 5px 24px;
+          padding: 2px 15px;
           color: $white;
           display: flex;
           justify-content: center;

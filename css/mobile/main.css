@@ -157,21 +157,17 @@ header nav li a:hover:after {
   margin-bottom: 20px;
 }
 #welcome .wrapper .text .buttons {
+  display: flex;
   width: 100%;
-}
-@media (min-width: 370px) {
-  #welcome .wrapper .text .buttons {
-    display: flex;
-  }
 }
 #welcome .wrapper .text .buttons .left {
   margin-right: 10px;
 }
 #welcome .wrapper .text .buttons .button {
-  font-size: 1em;
+  font-size: 0.8em;
   margin-bottom: 5px;
   border-radius: 30px;
-  padding: 5px 24px;
+  padding: 2px 15px;
   color: #ffffff;
   display: flex;
   justify-content: center;
